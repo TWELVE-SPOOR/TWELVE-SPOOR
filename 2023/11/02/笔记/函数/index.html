@@ -10,7 +10,7 @@
     
     
     
-    <title>archive_a | HANG</title>
+    <title>函数 | HANG</title>
     <link href="http://example.com" rel="prefetch" />
 
     
@@ -108,7 +108,7 @@
                 
                 
                 
-                <li class="current">
+                <li class="">
                     <a href="/archives">
                         <i class="fa fa-archive"></i>归档
                     </a>
@@ -183,19 +183,36 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <article class="article well article-body" id="article-archive">
+                    
+<article class="article well article-body" id="article">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
         <a href="http://example.com">HANG</a>
         >
-        <span>归档</span>
+        <span>函数</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/archives">归档</a>
+                <a href="/2023/11/02/%E7%AC%94%E8%AE%B0/%E5%87%BD%E6%95%B0/">函数</a>
             </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/%E6%A0%87%E7%AD%BE1/">标签1</a>, 
+                
+                <a href="/tags/%E6%A0%87%E7%AD%BE2/">标签2</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2023-11-02
+            </span>
+            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -203,71 +220,36 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/archives">归档</a>
+                    <a href="/2023/11/02/%E7%AC%94%E8%AE%B0/%E5%87%BD%E6%95%B0/">函数</a>
                 </h4>
             </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2023-11-02
+            </p>
+            <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/%E6%A0%87%E7%AD%BE1/">标签1</a>, 
+                
+                <a href="/tags/%E6%A0%87%E7%AD%BE2/">标签2</a>
+                
+                
+                
+            </p>
         </center>
     </div>
-    <div class="content-article" style="margin-top: 30px;">
-        
-        
-            <h1 style="font-size: 24px; margin-top: 40px;">2023年</h1>
-            
-        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
-            
-             
-             
-                        <a href="/2023/11/18/%E7%AC%94%E8%AE%B0/java/">java</a>
-                        <br>
-            
-             
-                        <a href="/2023/11/14/%E7%AC%94%E8%AE%B0/%E6%A8%A1%E5%9D%97/">文件</a>
-                        <br>
-            
-             
-                        <a href="/2023/11/10/%E7%AC%94%E8%AE%B0/%E5%BC%82%E5%B8%B8/">异常</a>
-                        <br>
-            
-             
-                        <a href="/2023/11/06/%E7%AC%94%E8%AE%B0/%E6%96%87%E4%BB%B6/">文件</a>
-                        <br>
-            
-             
-                        <a href="/2023/11/02/%E7%AC%94%E8%AE%B0/%E5%87%BD%E6%95%B0/">函数</a>
-                        <br>
-            
-             
-                        <a href="/2023/10/29/%E7%AC%94%E8%AE%B0/%E5%AD%97%E5%85%B8/">集合</a>
-                        <br>
-            
-             
-                        <a href="/2023/10/28/%E7%AC%94%E8%AE%B0/%E5%BA%8F%E5%88%97/"></a>
-                        <br>
-            
-             
-                        <a href="/2023/10/28/%E7%AC%94%E8%AE%B0/%E9%9B%86%E5%90%88/">集合</a>
-                        <br>
-            
-             
-                        <a href="/2023/09/24/%E7%AC%94%E8%AE%B0/MySQL%20(1)/"></a>
-                        <br>
-            
-             
-                        <a href="/2023/09/23/hello-world/">Hello World</a>
-                        <br>
-            
-             
-                        <a href="/2023/09/23/one/">one</a>
-                        <br>
-            
-             
-                        <a href="/2023/08/25/%E7%AC%94%E8%AE%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2/">字符串</a>
-                        <br>
-            
-                    </div>
-        
+    <div class="content-article">
+        <p><em>加参数就是不定长参数</em></p>
+<p>1.掌握位置参数<br>.根据参数位置来传递参数<br>2.掌握关键字参数<br>.通过“键&#x3D;值”形式传递参数，可以不限参数顺序<br>.可以和位置参数混用，位置参数需在前<br>3.掌握缺省参数<br>十<br>.不传递参数值时会使用默认的参数值<br>.默认值的参数必须定义在最后.<br>4.掌握不定长参数<br>位置不定长传递以*号标记一个形式参数，以元组的形式接受参数，<br>形式参数一般命名为args<br>关键字不定长传递以**号标记一个形式参数，以字典的形式接受<br>参数，形式参数- -般 命名为kwargs ;</p>
+<p>函数也可以当作参数</p>
+<p>函数的定义中<br>●<br>def关键字，可以定义带有名称的函数<br>●<br>lambda关键字，可以定义匿名函数(无名称)<br>有名称的函数，可以基于名称重复使用。<br>无名称的匿名函数，只可临时使用一次。</p>
+<p>匿名函数定义语法:<br>1ambda传入参数:<br>函数体(一行代码)<br>lambda是关键字，表示定义匿名函数<br>传入参数表示匿名函数的形式参数，如: X, y表示接收2个形式参数<br>函数体，就是函数的执行逻辑，要注意:只能写一行,无法写多行代码</p>
+
     </div>
 </article>
+
+
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -400,18 +382,6 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2023/09/23/hello-world/">Hello World</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2023/09/23/one/">one</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
                     <a href="/2023/09/24/%E7%AC%94%E8%AE%B0/MySQL%20(1)/"></a>
                 </span>
             </li>
@@ -448,7 +418,19 @@
             
             <li class="list-group-item">
                 <span class="post-title">
+                    <a href="/2023/11/10/%E7%AC%94%E8%AE%B0/%E5%BC%82%E5%B8%B8/">异常</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
                     <a href="/2023/11/06/%E7%AC%94%E8%AE%B0/%E6%96%87%E4%BB%B6/">文件</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/11/14/%E7%AC%94%E8%AE%B0/%E6%A8%A1%E5%9D%97/">文件</a>
                 </span>
             </li>
             
@@ -469,17 +451,17 @@
 
                 
                 <li>
-                    <a href="/archives/2023/10/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2023/11/02/%E7%AC%94%E8%AE%B0/%E5%87%BD%E6%95%B0/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/archives/2023/10/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2023/11/02/%E7%AC%94%E8%AE%B0/%E5%87%BD%E6%95%B0/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/archives/2023/10/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2023/11/02/%E7%AC%94%E8%AE%B0/%E5%87%BD%E6%95%B0/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -487,11 +469,11 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E6%A0%87%E7%AD%BE1/" style="font-size: 15.836270096350555px;" class="tag-cloud-link">标签1</a>
+    <a href="/tags/%E6%A0%87%E7%AD%BE1/" style="font-size: 10.884661110140247px;" class="tag-cloud-link">标签1</a>
     
-    <a href="/tags/%E6%A0%87%E7%AD%BE2/" style="font-size: 8.44129130134834px;" class="tag-cloud-link">标签2</a>
+    <a href="/tags/%E6%A0%87%E7%AD%BE2/" style="font-size: 10.490394462594224px;" class="tag-cloud-link">标签2</a>
     
-    <a href="/tags/%E6%88%91%E7%9A%84%E8%AF%9E%E7%94%9F/" style="font-size: 15.576716988686659px;" class="tag-cloud-link">我的诞生</a>
+    <a href="/tags/%E6%88%91%E7%9A%84%E8%AF%9E%E7%94%9F/" style="font-size: 18.612621188930646px;" class="tag-cloud-link">我的诞生</a>
     
 </div>
                 

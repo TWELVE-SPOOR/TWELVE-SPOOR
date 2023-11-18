@@ -10,7 +10,7 @@
     
     
     
-    <title>字符串 | HANG</title>
+    <title>文件 | HANG</title>
     <link href="http://example.com" rel="prefetch" />
 
     
@@ -189,13 +189,13 @@
         <i class="fa fa-home"></i>
         <a href="http://example.com">HANG</a>
         >
-        <span>字符串</span>
+        <span>文件</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/2023/08/25/%E5%AD%97%E7%AC%A6%E4%B8%B2/">字符串</a>
+                <a href="/2023/11/14/%E7%AC%94%E8%AE%B0/%E6%A8%A1%E5%9D%97/">文件</a>
             </h1>
         </div>
         <div class="tag-article">
@@ -210,7 +210,7 @@
             </span>
             
             <span class="label label-gal">
-                <i class="fa fa-calendar"></i> 2023-08-25
+                <i class="fa fa-calendar"></i> 2023-11-14
             </span>
             
         </div>
@@ -220,11 +220,11 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/2023/08/25/%E5%AD%97%E7%AC%A6%E4%B8%B2/">字符串</a>
+                    <a href="/2023/11/14/%E7%AC%94%E8%AE%B0/%E6%A8%A1%E5%9D%97/">文件</a>
                 </h4>
             </div>
             <p>
-                <i class="fa fa-calendar"></i> 2023-08-25
+                <i class="fa fa-calendar"></i> 2023-11-14
             </p>
             <p>
                 
@@ -240,8 +240,11 @@
         </center>
     </div>
     <div class="content-article">
-        <p>python字符串可以进行遍历<br>不可进行修改<br>只能替换成新的字符<br>●<br>字符串的规整操作(去前后空格)<br>语法:字符串.strip()<br>my- <em>str &#x3D;‘<br>’ itheima and itcast<br>11<br>print(my</em> str .strip()<br>#结果:”itheima and itcast”<br>●<br>字符串的规整操作(去前后指定字符串)<br>语法:字符串. strip(字符串)<br>my_ str &#x3D; “12itheima and itcast21”<br>print(my_ str .strip(“12”))<br>#结果:”itheima and itcast’<br>注意，传入的是“12”其实就是: ”1”和”2”都会移除，是按照单个字符。<br>#统计字符串中某字符串的出现次数，count<br>my_ str &#x3D; “itheima and itcast”<br>count &#x3D; my_ str. count(“it”)<br>print(f”字符串{my_ str}中it出现的次数是: {count}”)</p>
-<p>字符串[下标]<br>根据下标索引取出特定位置字符<br>字符串lindex(字符串)<br>查找给定字符的第-一个匹配项的下标<br>将字符串内的全部字符串1,替换为字<br>字符串replace(字符串1,字符串2)<br>符串2<br>不会修改原字符串，而是得到一一个新的<br>按照给定字符串，对字符串进行分隔<br>字符串.split(字符串)<br>不会修改原字符串，而是得到一-个新的<br>列表<br>字符串. strip()<br>字符串. strip(字符串)<br>移除首尾的空格和换行符或指定字符串<br>字符串.count(字符串)<br>统计字符串内某字符串的出现次数<br>len(字符串)<br>统计字符串的字符个数<br>序列进行切片</p>
+        <p>模块的导入方式<br>模块在使用前需要先导入导入的语法如下:<br>[from模块名]import[模块|类|变量|函数|*][as别名]<br>常用的组合形式如:<br>0import 模块名<br>0 from模块名import 类、变量、方法等<br>0 from 模块名import *<br>0 import 模块名as别名<br>0 from模块名import 功能名as别名</p>
+<p>基本语法:<br>#模块定义别名<br>import模块名as别名<br>#功能定义别名<br>from模块名import功能as别名</p>
+<p>1.如何自定义模块并导入?<br>在Python代码文件中正常写代码即可，通过import、from关键字和导<br>入Python内置模块-样导入即可使用。<br>2._ main_ 变量的功能是 ?<br>if__ main__ &#x3D;&#x3D; “I<br>_main_表示，只有当程序是直接执行的才会进入<br>if内部，如果是被导入的，则if无法进入<br>3.注意事项<br>不同模块，同名的功能，如果都被导入，那么后导入的会覆盖先导<br>入的</p>
+<p>1.什么是Python的包?<br>包就是-个文件夹，里面可以存放许多Python的模块(代码文件) ,通<br>过包，在逻辑上将一批模块归为一类,方便使用。<br>2._ init_ .py文件的作 用?<br>创建包会默认自动创建的文件，通过这个文件来表示一个文件夹是<br>Python的包，而非普通的文件夹。<br>3._ all_ 变量的作用?<br>同模块中学习到的是一个作用,控制import *能够导入的内容</p>
+<p>1.什么是第3方包?有什么作用?<br>第三方包就是非Python官方内置的包，可以安装它们扩展功能,提高开<br>发效率。<br>2.如何安装?<br>在命令提示符内:<br>●pip install 包名称<br>pip install-i)<br>https :&#x2F;&#x2F;pypi. tuna. ts inghua. edu. cn&#x2F;simple包名称</p>
 
     </div>
 </article>
@@ -303,31 +306,61 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2023/10/28/%E9%9B%86%E5%90%88/">集合</a>
+                    <a href="/2023/11/18/%E7%AC%94%E8%AE%B0/java/">java</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2023/09/24/MySQL%20(1)/"></a>
+                    <a href="/2023/11/14/%E7%AC%94%E8%AE%B0/%E6%A8%A1%E5%9D%97/">文件</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/11/10/%E7%AC%94%E8%AE%B0/%E5%BC%82%E5%B8%B8/">异常</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/11/06/%E7%AC%94%E8%AE%B0/%E6%96%87%E4%BB%B6/">文件</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/11/02/%E7%AC%94%E8%AE%B0/%E5%87%BD%E6%95%B0/">函数</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/10/29/%E7%AC%94%E8%AE%B0/%E5%AD%97%E5%85%B8/">集合</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/10/28/%E7%AC%94%E8%AE%B0/%E5%BA%8F%E5%88%97/"></a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/10/28/%E7%AC%94%E8%AE%B0/%E9%9B%86%E5%90%88/">集合</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/09/24/%E7%AC%94%E8%AE%B0/MySQL%20(1)/"></a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
                     <a href="/2023/09/23/hello-world/">Hello World</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2023/09/23/one/">one</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2023/08/25/%E5%AD%97%E7%AC%A6%E4%B8%B2/">字符串</a>
                 </span>
             </li>
             
@@ -355,25 +388,55 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2023/08/25/%E5%AD%97%E7%AC%A6%E4%B8%B2/">字符串</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
                     <a href="/2023/09/23/one/">one</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2023/09/24/MySQL%20(1)/"></a>
+                    <a href="/2023/09/24/%E7%AC%94%E8%AE%B0/MySQL%20(1)/"></a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2023/10/28/%E9%9B%86%E5%90%88/">集合</a>
+                    <a href="/2023/11/18/%E7%AC%94%E8%AE%B0/java/">java</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/10/29/%E7%AC%94%E8%AE%B0/%E5%AD%97%E5%85%B8/">集合</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/08/25/%E7%AC%94%E8%AE%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2/">字符串</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/10/28/%E7%AC%94%E8%AE%B0/%E5%BA%8F%E5%88%97/"></a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/11/10/%E7%AC%94%E8%AE%B0/%E5%BC%82%E5%B8%B8/">异常</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/11/06/%E7%AC%94%E8%AE%B0/%E6%96%87%E4%BB%B6/">文件</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/10/28/%E7%AC%94%E8%AE%B0/%E9%9B%86%E5%90%88/">集合</a>
                 </span>
             </li>
             
@@ -388,17 +451,17 @@
 
                 
                 <li>
-                    <a href="/2023/08/25/%E5%AD%97%E7%AC%A6%E4%B8%B2/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2023/11/14/%E7%AC%94%E8%AE%B0/%E6%A8%A1%E5%9D%97/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2023/08/25/%E5%AD%97%E7%AC%A6%E4%B8%B2/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2023/11/14/%E7%AC%94%E8%AE%B0/%E6%A8%A1%E5%9D%97/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2023/08/25/%E5%AD%97%E7%AC%A6%E4%B8%B2/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2023/11/14/%E7%AC%94%E8%AE%B0/%E6%A8%A1%E5%9D%97/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -406,11 +469,11 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E6%A0%87%E7%AD%BE1/" style="font-size: 15.36349786732525px;" class="tag-cloud-link">标签1</a>
+    <a href="/tags/%E6%A0%87%E7%AD%BE1/" style="font-size: 8.858986259155692px;" class="tag-cloud-link">标签1</a>
     
-    <a href="/tags/%E6%A0%87%E7%AD%BE2/" style="font-size: 14.241927123057177px;" class="tag-cloud-link">标签2</a>
+    <a href="/tags/%E6%A0%87%E7%AD%BE2/" style="font-size: 17.601133043588824px;" class="tag-cloud-link">标签2</a>
     
-    <a href="/tags/%E6%88%91%E7%9A%84%E8%AF%9E%E7%94%9F/" style="font-size: 12.679000593331885px;" class="tag-cloud-link">我的诞生</a>
+    <a href="/tags/%E6%88%91%E7%9A%84%E8%AF%9E%E7%94%9F/" style="font-size: 17.7260676435453px;" class="tag-cloud-link">我的诞生</a>
     
 </div>
                 

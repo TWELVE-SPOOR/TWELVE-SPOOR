@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-10-28T07:23:30.530Z</updated>
+  <updated>2023-11-18T13:33:41.623Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,9 +17,189 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>java</title>
+    <link href="http://example.com/2023/11/18/%E7%AC%94%E8%AE%B0/java/"/>
+    <id>http://example.com/2023/11/18/%E7%AC%94%E8%AE%B0/java/</id>
+    <published>2023-11-18T13:32:18.668Z</published>
+    <updated>2023-11-18T13:33:41.623Z</updated>
+    
+    <content type="html"><![CDATA[<p>前言<br>java语言特性<br>java的编译与运行<br>JDK、JRE、JVM<br>字符编码<br>数据类型<br>数据类型取值范围<br>数据类型默认转换<br>标识符命名方法<br>数组<br>一维数组<br>二维数组<br>数组排序算法<br>数组查找算法<br>数组工具类（Arrays）<br>逻辑运算符<br>输入操作<br>Java中的命名规则<br>有符号数据表示法<br>面向对象与面向过程<br>包<br>类<br>类的描述<br>类的导入<br>自定义类的使用<br>类的初始化过程<br>类的设计技巧<br>类的加载<br>类的加载时机<br>类加载器<br>对象<br>匿名对象<br>方法<br>方法概述<br>Java中值传递和引用传递<br>方法的内存分配与变化<br>方法重载<br>方法重写<br>main方法的格式讲解<br>构造器<br>变量<br>Java中的变量类型<br>成员变量与局部变量<br>访问控制权限修饰符<br>封装<br>this关键字<br>static关键字<br>final关键字<br>代码块<br>继承<br>super关键字<br>继承中构造方法的关系<br>继承使用场景<br>继承的设计技巧<br>多态<br>多态中的成员访问特点<br>抽象类<br>接口<br>简单修饰符归纳<br>内部类<br>成员内部类<br>局部内部类<br>匿名内部类<br>静态内部类<br>JVM的类加载规则<br>Java中的String<br>Java中的StringBuffer和StringBuilder<br>增强for<br>包装类<br>Math类<br>Random类<br>System类（系统类）<br>BigInteger类<br>BigDecimal类<br>Date类<br>DateFormat类<br>Calendar类<br>集合<br>Collection<br>迭代器<br>List<br>LinkedList<br>Map<br>哈希表的数据结构<br>TreeSet<br>Collections<br>泛型<br>泛型通配符<br>静态导入<br>可变参数<br>枚举<br>异常<br>异常继承体系图<br><strong>处理异常的两种方式</strong><br>自定义异常<br>final、finally、finalize<br>异常注意事项<br>IO流<br>IO流的释义<br>IO流的分类<br>文件专属流<br>转换流<br>缓冲流<br>数据流<br>标准输出流<br>序列化与反序列化<br>File类<br>多线程<br>名词释义<br>多线程实现<br>线程的生命周期<br>线程的优先级<br>线程的调度模型<br>线程安全<br>守护线程<br>定时器<br>Object中的wait方法和notify方法<br>获取文件绝对路径<br>资源绑定器<br>反射<br>反射的优点<br>反射的缺点<br>注解<br>面向对象思想设计原则<br>设计模式<br>Java小知识<br>Eclipse中常用的快捷键<br>结语<br>前言<br>个人博客网站：XLFBlog（<a href="http://blog.huiyuanai.cloud/index%EF%BC%89%EF%BC%8C%E6%AC%A2%E8%BF%8E%E5%A4%A7%E5%AE%B6%E4%BA%A4%E6%B5%81%E5%AD%A6%E4%B9%A0%E5%93%A6">http://blog.huiyuanai.cloud/index），欢迎大家交流学习哦</a>~</p><p>以下是一名java初学者在自学过程中所整理的笔记，欢迎大家浏览并留言，若有错误的地方请大家指正。</p><p>java语言特性<br>简单性：相对于其他编程语言而言，java较为简单，例如：java不再支持多继承，C++是支持多继承的，多继承比较复杂，C++中有指针，java中屏蔽了指针的概念，避免了绝大部分的指针越界和内存泄露的问题，这里说明一下，java语言低层是用C++实现的，并不是C语言。<br>面向对象：java是纯面向对象的，更符合人的思维模式，易于理解。<br>健壮性：java的健壮性与自动垃圾回收机制有关，自动垃圾回收机制简称GC机制，java语言运行过程中产生的垃圾是自动回收的，不需要程序员关心。<br>可移植性：java程序可以做到一次编译，到处运行。在Windows操作系统上运行的java程序，不做任何修改，可以直接放到Linux操作系统上运行，这个被称为java程序的可移植性（跨平台）。java的跨平台性是通过JVM（java虚拟机）实现的，java代码不直接与底层操作系统打交道，而是通过JVM这个中间介质间接与底层操作系统交互，JVM屏蔽了各操作系统之间的差异，不同版本的操作系统就有不同版本的JVM，只有在JVM这个环境下的java程序才能运行。<br>多线程<br>java的编译与运行</p><p>JDK、JRE、JVM<br>JDK：java开发工具包<br>JRE：java运行时环境<br>JVM：java虚拟机<br>说明：<br>1、JDK和JRE都可以单独安装，若不需要开发Java程序，只需要运行的话，那么，只用安装JRE即可。<br>2、JVM不能单独安装。<br>以下为三者关系图：</p><p>字符编码<br>为了让计算机可以表示现实世界中的文字，需要人提前制定好“文字”和“二进制”之间的对照关系，这种对照转换关系被称为“字符编码”。</p><p>ASCII码：采用一个字节编码，主要针对英文编码<br>GBK：主要是简体汉字编码<br>Unicode:统一了全世界的所有文字编码，采用这三种方式实现（UTF-8、UTF-16、UTF-32）<br>说明：<br>1、Java采用Unicode编码方式<br>2、在实际开发中，一般使用UTF-8编码方式实现<br>数据类型<br>Java程序中最基本的单位是类<br>Java中变量赋值时必须类型对应，否则不兼容，编译不过，可用强转<br>Java中局部变量不赋值不能使用</p><p>说明：整数默认为int，浮点数默认为double，布尔类型默认为false</p><p>数据类型取值范围</p><p>数据类型默认转换<br>byte、short、char–&gt;int–&gt;long–&gt;float–&gt;double<br>1<br>注：为什么long比float所占字节长度更大却是long转换为float呢？<br>因为它们底层的存储结构不同，float表示的数据范围要比long的范围更大。</p><p>标识符命名方法<br>小驼峰命名法：标识符是由一个单词组成时首字母小写，多个单词组成时第一个单词首字母小写，其余单词首字母大写。<br>大驼峰命名法：标识符是由一个单词组成时首字母大写，多个单词组成时每一个单词首字母大写。<br>说明：小驼峰命名法用于方法、变量的命名，大驼峰命名法用于类的命名。<br>数组<br>一维数组<br>格式如下：</p><p>&#x2F;<em>动态初始化</em>&#x2F;<br>数组类型[] 数组名 &#x3D; new 数组类型[元素个数（数组长度）];</p><p>&#x2F;<em>静态初始化</em>&#x2F;<br>数组类型[] 数组名 &#x3D; {元素1, 元素2, 元素3, …..} &#x3D; new 数组类型[]{元素1, 元素2, 元素3, …..};<br>1<br>2<br>3<br>4<br>5<br>举例：</p><p>String[] array1 &#x3D; {“abc”, “a”, “ad”};&#x2F;&#x2F;字符串数组中不能有字符（’’）<br>char[] array2 &#x3D; {‘A’, ‘b’};&#x2F;&#x2F;字符数组中不能有字符串（””）<br>int[] array3 &#x3D; {23, 12, 90};<br>1<br>2<br>3<br>说明：以上例子中可以把“[ ]”放在数组名后面（array1[]）,但是Java中不建议这样，放在数组名前面更易于理解。</p><p>用“ 数组名.length ”的方式来获得数组长度<br>字符数组默认初始值为一个空字符（“\u000”）<br>boolean数组默认初始值为false，其余数组默认值为0<br>Java中的数组必须先初始化（赋值后）才能使用<br>二维数组<br>格式如下：</p><p>&#x2F;<em>动态初始化</em>&#x2F;<br>写法一：数据类型[][] 数组名 &#x3D; new 数据类型[m][n];&#x2F;&#x2F;m表示这个二维数组有m个一维数组， n表示每一个一维数组有n个元素<br>写法二：数据类型 数组名[][] &#x3D; new 数据类型[m][n];<br>写法三：数据类型[] 数组名[] &#x3D; new 数据类型[m][n];<br>数据类型[][] 数组名 &#x3D; new 数据类型[m][];&#x2F;&#x2F;如果没有给出每个一维数组的元素个数，就表示这个二维数组是变化的，但不能没有一维数组的个数</p><p>&#x2F;<em>静态初始化</em>&#x2F;<br>数据类型[][] 数组名 &#x3D; </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;前言&lt;br&gt;java语言特性&lt;br&gt;java的编译与运行&lt;br&gt;JDK、JRE、JVM&lt;br&gt;字符编码&lt;br&gt;数据类型&lt;br&gt;数据类型取值范围&lt;br&gt;数据类型默认转换&lt;br&gt;标识符命名方法&lt;br&gt;数组&lt;br&gt;一维数组&lt;br&gt;二维数组&lt;br&gt;数组排序算法&lt;br&gt;数组查找算法&lt;</summary>
+      
+    
+    
+    
+    <category term="分类" scheme="http://example.com/categories/%E5%88%86%E7%B1%BB/"/>
+    
+    
+    <category term="标签1" scheme="http://example.com/tags/%E6%A0%87%E7%AD%BE1/"/>
+    
+    <category term="标签2" scheme="http://example.com/tags/%E6%A0%87%E7%AD%BE2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>文件</title>
+    <link href="http://example.com/2023/11/14/%E7%AC%94%E8%AE%B0/%E6%A8%A1%E5%9D%97/"/>
+    <id>http://example.com/2023/11/14/%E7%AC%94%E8%AE%B0/%E6%A8%A1%E5%9D%97/</id>
+    <published>2023-11-14T13:04:27.600Z</published>
+    <updated>2023-11-18T03:01:32.987Z</updated>
+    
+    <content type="html"><![CDATA[<p>模块的导入方式<br>模块在使用前需要先导入导入的语法如下:<br>[from模块名]import[模块|类|变量|函数|*][as别名]<br>常用的组合形式如:<br>0import 模块名<br>0 from模块名import 类、变量、方法等<br>0 from 模块名import *<br>0 import 模块名as别名<br>0 from模块名import 功能名as别名</p><p>基本语法:<br>#模块定义别名<br>import模块名as别名<br>#功能定义别名<br>from模块名import功能as别名</p><p>1.如何自定义模块并导入?<br>在Python代码文件中正常写代码即可，通过import、from关键字和导<br>入Python内置模块-样导入即可使用。<br>2._ main_ 变量的功能是 ?<br>if__ main__ &#x3D;&#x3D; “I<br>_main_表示，只有当程序是直接执行的才会进入<br>if内部，如果是被导入的，则if无法进入<br>3.注意事项<br>不同模块，同名的功能，如果都被导入，那么后导入的会覆盖先导<br>入的</p><p>1.什么是Python的包?<br>包就是-个文件夹，里面可以存放许多Python的模块(代码文件) ,通<br>过包，在逻辑上将一批模块归为一类,方便使用。<br>2._ init_ .py文件的作 用?<br>创建包会默认自动创建的文件，通过这个文件来表示一个文件夹是<br>Python的包，而非普通的文件夹。<br>3._ all_ 变量的作用?<br>同模块中学习到的是一个作用,控制import *能够导入的内容</p><p>1.什么是第3方包?有什么作用?<br>第三方包就是非Python官方内置的包，可以安装它们扩展功能,提高开<br>发效率。<br>2.如何安装?<br>在命令提示符内:<br>●pip install 包名称<br>pip install-i)<br>https :&#x2F;&#x2F;pypi. tuna. ts inghua. edu. cn&#x2F;simple包名称</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;模块的导入方式&lt;br&gt;模块在使用前需要先导入导入的语法如下:&lt;br&gt;[from模块名]import[模块|类|变量|函数|*][as别名]&lt;br&gt;常用的组合形式如:&lt;br&gt;0import 模块名&lt;br&gt;0 from模块名import 类、变量、方法等&lt;br&gt;0 from 模</summary>
+      
+    
+    
+    
+    <category term="分类" scheme="http://example.com/categories/%E5%88%86%E7%B1%BB/"/>
+    
+    
+    <category term="标签1" scheme="http://example.com/tags/%E6%A0%87%E7%AD%BE1/"/>
+    
+    <category term="标签2" scheme="http://example.com/tags/%E6%A0%87%E7%AD%BE2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>异常</title>
+    <link href="http://example.com/2023/11/10/%E7%AC%94%E8%AE%B0/%E5%BC%82%E5%B8%B8/"/>
+    <id>http://example.com/2023/11/10/%E7%AC%94%E8%AE%B0/%E5%BC%82%E5%B8%B8/</id>
+    <published>2023-11-10T12:50:23.314Z</published>
+    <updated>2023-11-10T12:51:10.440Z</updated>
+    
+    <content type="html"><![CDATA[<p>try:<br>可能发生错误的代码<br>except:<br>如果出现异常执行的代码</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;try:&lt;br&gt;可能发生错误的代码&lt;br&gt;except:&lt;br&gt;如果出现异常执行的代码&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="分类" scheme="http://example.com/categories/%E5%88%86%E7%B1%BB/"/>
+    
+    
+    <category term="标签1" scheme="http://example.com/tags/%E6%A0%87%E7%AD%BE1/"/>
+    
+    <category term="标签2" scheme="http://example.com/tags/%E6%A0%87%E7%AD%BE2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>文件</title>
+    <link href="http://example.com/2023/11/06/%E7%AC%94%E8%AE%B0/%E6%96%87%E4%BB%B6/"/>
+    <id>http://example.com/2023/11/06/%E7%AC%94%E8%AE%B0/%E6%96%87%E4%BB%B6/</id>
+    <published>2023-11-06T11:47:59.628Z</published>
+    <updated>2023-11-09T11:58:51.754Z</updated>
+    
+    <content type="html"><![CDATA[<p>open()打开函数<br>在Python，使用open函数，可以打开一个已经存在的文件，或者创建一一个新文件，语法如下<br>open(name, mode, encoding)<br>name:<br>是要打开的目标文件名的字符串(可以包含文件所在的具体路径)。<br>mode:设置打开文件的模式(访问模式):只读、写入、追加等。</p><p>mode’常用的二种基础访问模式<br>模式<br>描述<br>r<br>以只读方式打开文件。文件的指针将会放在文件的开头。这是默认模式。<br>w</p><p>打开一一个文件只用于写入。如果该文件已存在则打开文件,并从开头开始编辑，原有内容会被删除。<br>如果该文件不存在，创建新文件。</p><p>a</p><p>打开一个文件用于追加。如果该文件已存在，新的内容将会被写入到已有内容之后。</p><p>如果该文件不存在，创建新文件进行写入。encoding:编码格式(推荐使用UTF-8)<br>示例代码: .<br>f &#x3D; open(‘python.txt’, ‘r, encoding&#x3D;” UTF-8)</p><p>读取操作的相关方法</p><p>read()方法:<br>文件对象.read(num)<br>num表示要从文件中读取的数据的长度(单位是字节)，如果没有传入num，那么就表示读取文件中所有的数据。<br>readl: ines()方法:<br>readl ines可以按照行的方式把整个文件中的内容进行一次性读取， 并且返回的是-一个列表， 其中每一行的数据 为一- 个<br>元素。</p><p>readline()方法:一次读取一行内容</p><p>for循环读取文件行<br>for line in open(“python.txt”, “r”):<br>print(line)<br>#每一个line临时变量，就记录了文件的一-行数据</p><p>close()关闭文件对象.<br>f&#x3D; open(“ python.txt”, “r”)<br>f.close()<br>#最后通过close,关闭文件对象，也就是关闭对文件的占用<br>#如果不调用close,同时程序没有停止运行，那么这个文件将一直被Python程序占用。 </p><p>with open语法<br>with open(“python.txt”, “r”) as f:<br>f.readlines()<br>#通过在with open的语句块中对文件进行操作<br>#可以在操作完成后自动关闭close文件，避免遗忘掉close方法 </p><p>w模式当文件存在在进行编写会进行清空</p><p>不存在会进行创建</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;open()打开函数&lt;br&gt;在Python，使用open函数，可以打开一个已经存在的文件，或者创建一一个新文件，语法如下&lt;br&gt;open(name, mode, encoding)&lt;br&gt;name:&lt;br&gt;是要打开的目标文件名的字符串(可以包含文件所在的具体路径)。&lt;br&gt;</summary>
+      
+    
+    
+    
+    <category term="分类" scheme="http://example.com/categories/%E5%88%86%E7%B1%BB/"/>
+    
+    
+    <category term="标签1" scheme="http://example.com/tags/%E6%A0%87%E7%AD%BE1/"/>
+    
+    <category term="标签2" scheme="http://example.com/tags/%E6%A0%87%E7%AD%BE2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>函数</title>
+    <link href="http://example.com/2023/11/02/%E7%AC%94%E8%AE%B0/%E5%87%BD%E6%95%B0/"/>
+    <id>http://example.com/2023/11/02/%E7%AC%94%E8%AE%B0/%E5%87%BD%E6%95%B0/</id>
+    <published>2023-11-02T12:25:54.878Z</published>
+    <updated>2023-11-05T08:27:48.044Z</updated>
+    
+    <content type="html"><![CDATA[<p><em>加参数就是不定长参数</em></p><p>1.掌握位置参数<br>.根据参数位置来传递参数<br>2.掌握关键字参数<br>.通过“键&#x3D;值”形式传递参数，可以不限参数顺序<br>.可以和位置参数混用，位置参数需在前<br>3.掌握缺省参数<br>十<br>.不传递参数值时会使用默认的参数值<br>.默认值的参数必须定义在最后.<br>4.掌握不定长参数<br>位置不定长传递以*号标记一个形式参数，以元组的形式接受参数，<br>形式参数一般命名为args<br>关键字不定长传递以**号标记一个形式参数，以字典的形式接受<br>参数，形式参数- -般 命名为kwargs ;</p><p>函数也可以当作参数</p><p>函数的定义中<br>●<br>def关键字，可以定义带有名称的函数<br>●<br>lambda关键字，可以定义匿名函数(无名称)<br>有名称的函数，可以基于名称重复使用。<br>无名称的匿名函数，只可临时使用一次。</p><p>匿名函数定义语法:<br>1ambda传入参数:<br>函数体(一行代码)<br>lambda是关键字，表示定义匿名函数<br>传入参数表示匿名函数的形式参数，如: X, y表示接收2个形式参数<br>函数体，就是函数的执行逻辑，要注意:只能写一行,无法写多行代码</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;em&gt;加参数就是不定长参数&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;1.掌握位置参数&lt;br&gt;.根据参数位置来传递参数&lt;br&gt;2.掌握关键字参数&lt;br&gt;.通过“键&amp;#x3D;值”形式传递参数，可以不限参数顺序&lt;br&gt;.可以和位置参数混用，位置参数需在前&lt;br&gt;3.掌握缺省参数&lt;br&gt;十&lt;b</summary>
+      
+    
+    
+    
+    <category term="分类" scheme="http://example.com/categories/%E5%88%86%E7%B1%BB/"/>
+    
+    
+    <category term="标签1" scheme="http://example.com/tags/%E6%A0%87%E7%AD%BE1/"/>
+    
+    <category term="标签2" scheme="http://example.com/tags/%E6%A0%87%E7%AD%BE2/"/>
+    
+  </entry>
+  
+  <entry>
     <title>集合</title>
-    <link href="http://example.com/2023/10/28/%E9%9B%86%E5%90%88/"/>
-    <id>http://example.com/2023/10/28/%E9%9B%86%E5%90%88/</id>
+    <link href="http://example.com/2023/10/29/%E7%AC%94%E8%AE%B0/%E5%AD%97%E5%85%B8/"/>
+    <id>http://example.com/2023/10/29/%E7%AC%94%E8%AE%B0/%E5%AD%97%E5%85%B8/</id>
+    <published>2023-10-29T06:47:47.526Z</published>
+    <updated>2023-10-29T11:03:14.483Z</updated>
+    
+    <content type="html"><![CDATA[<p>#定义子典子面量<br>{key: value， key: value， ……， key: value}<br>#定义字典变量<br>my_ dict &#x3D; {key: value， key: value， ……. key: value}<br>#定义空字典<br>my_ dict &#x3D; {}<br>#空字典定义方式1<br>my_ dict &#x3D; dict()<br>#空字典定义方式2</p><p>●<br>键值对的Key和Value可以是任意类型( Key不可为字典)<br>●<br>字典内Key不允许重复，重复添加等同于覆盖原有数据</p><p><a href="">不可以使用索引检索</a></p><p>新增元素<br>语法:字典[Keyj)&#x3D; Value,结果:字典被修改，新增了元素<br>stu_ score &#x3D; {</p><p>“王力鸿”:77,</p><p>“周杰轮”: 88,</p><p>“林俊节”: 99<br>}<br>#新增:张学油的考试成绩<br>  stu_ score[‘张学油’] &#x3D; 66<br>print(stu_ score)<br>#结果: {‘王力鸿’: 77， ‘周杰轮’: 88，’林俊节’: 99， ‘张学油’: 66}<br>●更新元素<br>语法:字典[Key])&#x3D; Value,结果:字典被修改,元素被更新<br>注意:字典Key不可以重复，所以对已存在的Key执行上述操作，就是更新Value值<br>删除元素<br>语法:字典pop(Key),结果:获得指定Key的Value,同时字典被修改,指定Key的数据被删除<br>1| stu_ score &#x3D; {<br>“王力鸿”: 77 ,<br>“周杰轮”: 88 ,<br>“林俊节”: 99<br>value &#x3D; stu_ score. pop(“王力鸿”)<br> print(value)<br>#结果:77<br>8| print(stu_ score)<br>#结果: {“周杰轮”: 88，”林俊节”: 99}<br>#清空元素，cLear<br>my_ dict. cLear()<br>print(f”字典被清空了，内容是: {my_ dict}”)</p><p>#获取全部的key<br>my_ <em>dict &#x3D; {“周杰轮”: 99，”林俊节”: 88，”张学油”: 77}<br>keys &#x3D; my</em> dict.keys()<br>print (f”字典的全部keys是: {keys}”)<br>)#遍历字典<br>#方式1:通过获取到全部的key来完成遍历<br>for key in keys:<br>print (f”字典的key是:{key}”)<br>print (f”字典的value是: {my_ dict[key]}”)<br>#方式2:直接对字典进行or循环，每- 次循环都是直接得到key<br>for key in my_ dict:<br>print(f”2字典的key是:{key}”)<br>print (f”字典的value是: {my_ dict[key]}”)</p><p>字典不支持索引，不能用while</p><p>字典[Key]<br>获取指定Key对应的Value值<br>字典[Key] &#x3D; Value<br>添加或更新键值对<br>字典.pop(Key)<br>取出Key对应的Value并在字典内删除此Key的键值对<br>字典.clear()<br>清空字典<br>字典.keys()<br>获取字典的全部Key,可用于for循 环遍历字典<br>len(字典)<br>计算字典内的元素数量</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;#定义子典子面量&lt;br&gt;{key: value， key: value， ……， key: value}&lt;br&gt;#定义字典变量&lt;br&gt;my_ dict &amp;#x3D; {key: value， key: value， ……. key: value}&lt;br&gt;#定义空字典&lt;br&gt;</summary>
+      
+    
+    
+    
+    <category term="分类" scheme="http://example.com/categories/%E5%88%86%E7%B1%BB/"/>
+    
+    
+    <category term="标签1" scheme="http://example.com/tags/%E6%A0%87%E7%AD%BE1/"/>
+    
+    <category term="标签2" scheme="http://example.com/tags/%E6%A0%87%E7%AD%BE2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2023/10/28/%E7%AC%94%E8%AE%B0/%E5%BA%8F%E5%88%97/"/>
+    <id>http://example.com/2023/10/28/%E7%AC%94%E8%AE%B0/%E5%BA%8F%E5%88%97/</id>
+    <published>2023-10-28T09:41:45.640Z</published>
+    <updated>2023-11-02T12:26:03.775Z</updated>
+    
+    <content type="html"><![CDATA[<hr><hr>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;hr&gt;
+&lt;hr&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>集合</title>
+    <link href="http://example.com/2023/10/28/%E7%AC%94%E8%AE%B0/%E9%9B%86%E5%90%88/"/>
+    <id>http://example.com/2023/10/28/%E7%AC%94%E8%AE%B0/%E9%9B%86%E5%90%88/</id>
     <published>2023-10-28T07:13:16.413Z</published>
     <updated>2023-10-28T07:23:30.530Z</updated>
     
@@ -44,8 +224,8 @@
   
   <entry>
     <title></title>
-    <link href="http://example.com/2023/09/24/MySQL%20(1)/"/>
-    <id>http://example.com/2023/09/24/MySQL%20(1)/</id>
+    <link href="http://example.com/2023/09/24/%E7%AC%94%E8%AE%B0/MySQL%20(1)/"/>
+    <id>http://example.com/2023/09/24/%E7%AC%94%E8%AE%B0/MySQL%20(1)/</id>
     <published>2023-09-24T04:06:10.890Z</published>
     <updated>2023-09-24T03:30:49.092Z</updated>
     
@@ -106,8 +286,8 @@
   
   <entry>
     <title>字符串</title>
-    <link href="http://example.com/2023/08/25/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    <id>http://example.com/2023/08/25/%E5%AD%97%E7%AC%A6%E4%B8%B2/</id>
+    <link href="http://example.com/2023/08/25/%E7%AC%94%E8%AE%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    <id>http://example.com/2023/08/25/%E7%AC%94%E8%AE%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2/</id>
     <published>2023-08-25T10:03:07.000Z</published>
     <updated>2023-10-28T07:23:57.522Z</updated>
     
