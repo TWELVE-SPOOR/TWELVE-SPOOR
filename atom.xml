@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-11-18T14:01:04.730Z</updated>
+  <updated>2023-11-28T07:35:07.192Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,86 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>构造方法</title>
+    <link href="http://example.com/2023/11/24/%E7%AC%94%E8%AE%B0/%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95/"/>
+    <id>http://example.com/2023/11/24/%E7%AC%94%E8%AE%B0/%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95/</id>
+    <published>2023-11-24T04:08:35.648Z</published>
+    <updated>2023-11-28T07:35:07.192Z</updated>
+    
+    <content type="html"><![CDATA[<p>Python类可以使用:_ init_ ()方法, 称之为构造方法。<br>可以实现:<br>在创建类对象(构造类)的时候,会自动执行。<br>●<br>在创建类对象(构造类)的时候，将传入参数自动传递给_ <em>init</em> <em>方 法使用。<br>class student :<br>name &#x3D; None|<br>age &#x3D; None<br>te1 &#x3D; None<br>def _ init</em> <em>(se1f， name， age， te1):<br>构建类时传入的参数会自动提供给init_方法<br>se1f. name<br>&#x3D; name<br>构建类的时候</em> init_ 方法会 自动执行<br>se1f .age &#x3D; age<br>self.te1 &#x3D; te1<br>print(“Student类创建了一个对象”<br>来我们分析一下<br>stu &#x3D; | Student(“周杰轮”，31， “ 18500006666”) |</p><p>在 Python 中，<code>if __name__ == &#39;__main__&#39;:</code> 是一个常见的代码块，它在模块被直接运行时执行特定的操作，而不是在模块被导入时执行。</p><p>在测试代码中，<code>if __name__ == &#39;__main__&#39;:</code> 的作用是判断当前脚本是否作为主程序直接执行，而不是被其他模块导入。这样做的目的是为了方便在命令行或终端中直接运行测试代码，而不需要通过其他模块进行间接调用。</p><p>当您执行测试代码时，Python 解释器会从文件的开头开始执行代码，直到遇到 <code>if __name__ == &#39;__main__&#39;:</code> 这一行。如果脚本作为主程序直接执行，条件成立，<code>if</code> 语句块中的代码会被执行。在上述示例中，<code>unittest.main()</code> 是运行 <code>unittest</code> 框架执行所有的测试方法。</p><p>如果测试代码被其他模块导入，那么 <code>if __name__ == &#39;__main__&#39;:</code> 条件将不满足，<code>if</code> 语句块中的代码将不会被执行。这样做的好处是，您可以在测试代码中定义测试方法、类等，而不会在导入模块时立即执行这些测试。</p><p>总结来说，<code>if __name__ == &#39;__main__&#39;:</code> 的作用是在测试代码文件被直接运行时执行特定的操作，通常用于运行测试框架或执行一些与测试相关的任务。                                          </p><p>方法<br>功能<br><em>init</em>_<br>构造方法，可用于创建类对象的时候设置初始化行为<br><em>str</em>_<br>用于实现类对象转字符串的行为<br>用于2个类对象进行小于或大于比较<br>用于2个类对象进行小于等于或大于等于比较<br><em>eq</em><br>用于2个类对象进行相等比较</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Python类可以使用:_ init_ ()方法, 称之为构造方法。&lt;br&gt;可以实现:&lt;br&gt;在创建类对象(构造类)的时候,会自动执行。&lt;br&gt;●&lt;br&gt;在创建类对象(构造类)的时候，将传入参数自动传递给_ &lt;em&gt;init&lt;/em&gt; &lt;em&gt;方 法使用。&lt;br&gt;class</summary>
+      
+    
+    
+    
+    <category term="分类" scheme="http://example.com/categories/%E5%88%86%E7%B1%BB/"/>
+    
+    
+    <category term="标签1" scheme="http://example.com/tags/%E6%A0%87%E7%AD%BE1/"/>
+    
+    <category term="标签2" scheme="http://example.com/tags/%E6%A0%87%E7%AD%BE2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>图表</title>
+    <link href="http://example.com/2023/11/21/%E7%AC%94%E8%AE%B0/%E5%9B%BE%E8%A1%A8/"/>
+    <id>http://example.com/2023/11/21/%E7%AC%94%E8%AE%B0/%E5%9B%BE%E8%A1%A8/</id>
+    <published>2023-11-21T02:56:26.381Z</published>
+    <updated>2023-11-21T11:56:11.669Z</updated>
+    
+    <content type="html"><![CDATA[<p>Map</p><p>map.set_ global_ opts(<br>visualmap_ opts&#x3D;VisuaLMapOpts(<br>is_ show&#x3D;True,<br>is_ piecewise&#x3D;True,<br>1<br>pieces&#x3D;[<br>{“min”: 1, “max”: 9，”LabeL”: “1-9人”， “color”: “#CCFFFF”},<br>{“min”: 10，”max”: 99，”Label”: “10-99人”， “color”: “#FFFF99”},<br>{“min”: 100， “max”: 499， “Label”: “99-499人”， “color”: “#FF9966”},<br>{“min”: 500， “max”: 999， “LabeL”: “499-999人”， “color”: “#FF6666”},<br>{“min”: 1000， “max”: 9999， “labeL”: “1000-9999人”， “color”: “#CC3333”},<br>{“min”: 10000， “LabeL”: “10000以 上”，”color”: “#990033”}<br>])<br>)</p><p>#读取数据文件<br>TOU-<br>f &#x3D; open(“D:&#x2F;疫情.txt”, “r”, encoding&#x3D;”UTF-8”)<br>data &#x3D; f.read()<br>#全部数据<br>#关闭文件<br>f . cLose()<br>#取到各省数据<br>共将字符串json转换为ython的字典<br>data_ dict &#x3D; json. loads (data)<br>#基础数据字典<br>#从字典中取出省份的数据<br>province_ data <em>list &#x3D; data</em> dict[“areaTree”] [0][“children”]<br>#组装每个省份和确诊人数为元组，并各个省的数据都封装入列表内<br>data_list &#x3D; []<br>#绘图需要用的数据列表<br>lfor province_ data in province_ data. <em>list:<br>province</em> name &#x3D; province_ data[“name”]<br>#省份名称<br>province_ confirm &#x3D; province_ data[ “total”] [ “confirm”]<br>#确诊人数<br>data. <em>list. append( (province</em> name， province_ confirm))</p><p>map &#x3D; Map()<br>共添加数据<br>map.add(“各省份确诊人数”，data. <em>list，”china”)<br>#设置全局配置，定制分段的视觉映射<br>map. set</em> .global_ opts(<br>title_ opts&#x3D;TitleOpts (titLe&#x3D;”全国疫情地图”),<br>visuaLmap_ opts&#x3D;VisuaLMap0pts(<br>is_ show&#x3D;True,<br>#是否显示<br>is_ piecewise&#x3D;True,<br>#是否分段<br>pieces&#x3D;[<br>{“min”: 1，”max”: 99，”lable”: “1<del>99人”， “color”: “#CCFFFF”},<br>{“min”: 100， “max”: 999，”Lable”: “100</del>9999人”， “color”: “#FFFF99”},<br>{“min”: 1000， “max”: 4999，”lable”: “1000<del>4999人”， “coLor”: “#FF9966”},<br>{“min”: 5000， “max”: 9999 ,<br>“Lable”: “5000</del>99999人”<br>“color”: “#FF6666”},<br>{“min”: 10000， “max”: 99999，”lable”: “10000~99999人”， “color”: “#CC3333”},<br>{“min”: 100000， “lable”: “100000+”， “color”: “#990033”},<br>)<br>|)</p><p>柱状图</p><p>#构建柱状图对象<br>bar &#x3D; Bar()<br>#添加x轴数据<br>bar.add_ xaxis([“中国”，”美国”，”英国”])<br>#添加y轴数据<br>bar . add_ <em>yaxis(“GDP”，[30， 20，10])<br>#反转xy抽<br>bar . reversal</em> axis() |<br>#绘图<br>bar. render(“基础柱状图. htmL”)</p><p>自动播放</p><p>#设置自动播放<br>timeline . add_ schema(<br>play_ interval&#x3D;1000 ,</p><h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>is_ .timeline_ .show&#x3D;True,<br>#是否在自动播放的时候，显示时间线<br>is_ <em>auto</em> play&#x3D;True,<br>#是否自动播放<br>is. _loop. play&#x3D;True<br>#是否留环自动播放<br>)</p><p>设置颜色</p><p>from pyecharts. globals import ThemeType<br>#创建时间线对象<br>timeline &#x3D; Timeline(<br>{“theme”: ThemeType . LIGHT}{</p><p>编号<br>颜色<br>备注<br>ThemeType.WHITE<br>红蓝<br>默认颜色等同于bar&#x3D; Bar ()<br>ThemeType.LIGHt<br>蓝黄粉<br>高亮颜色<br>ThemeType.DARK<br>红蓝<br>黑色背景<br>ThemeType.CHALK<br>红蓝绿<br>黑色背景<br>ThemeType.ESSOS<br>红黄<br>暖色系<br>ThemeType.INFOGRAPHIC<br>红蓝黄<br>偏亮<br>ThemeType.MACARONS<br>紫绿<br>ThemeType.PURPLE PASSION<br>粉紫<br>灰色背景<br>ThemeType.ROMA<br>红黑灰<br>偏暗<br>ThemeType.ROMANTIC<br>红粉蓝<br>淡黄色背景</p><p>列表的sort方法<br>在前面我们学习过sorted函数，可以对数据容器进行排序。<br>在后面的数据处理中，我们需要对列表进行排序,并指定排序规则，sorted 函数就无法完成了。<br>我们补充学习列表的sort方法。<br>使用方式:<br>列表.sort(key&#x3D;选择排序依据的函数, reverse&#x3D;True|False)<br>●参数key,是要求传入- -个函数，表示将列表的每- -个元素都传入函数中，返回排序的依据<br>●参数reverse,是否反转排序结果，True表示降序，False表示升序</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Map&lt;/p&gt;
+&lt;p&gt;map.set_ global_ opts(&lt;br&gt;visualmap_ opts&amp;#x3D;VisuaLMapOpts(&lt;br&gt;is_ show&amp;#x3D;True,&lt;br&gt;is_ piecewise&amp;#x3D;True,&lt;br&gt;1&lt;br&gt;piece</summary>
+      
+    
+    
+    
+    <category term="分类" scheme="http://example.com/categories/%E5%88%86%E7%B1%BB/"/>
+    
+    
+    <category term="标签1" scheme="http://example.com/tags/%E6%A0%87%E7%AD%BE1/"/>
+    
+    <category term="标签2" scheme="http://example.com/tags/%E6%A0%87%E7%AD%BE2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>json</title>
+    <link href="http://example.com/2023/11/20/%E7%AC%94%E8%AE%B0/json/"/>
+    <id>http://example.com/2023/11/20/%E7%AC%94%E8%AE%B0/json/</id>
+    <published>2023-11-20T11:34:51.020Z</published>
+    <updated>2023-11-20T12:25:36.981Z</updated>
+    
+    <content type="html"><![CDATA[<p>●json格 式的数据要求很严格，下 面我们看一下 他的要求.JSON格式的数据要求很严格，下面我们看一下他的要求</p><p>{“name”:”admin”,” age”:18}<br>#也可以是:<br>[“name”:” admin”,”age” :18},{“name” :”root”,” age”:16},{“name” :”张三”,”age”:20}]</p><p>#通过json.dumps(data)方法把python数据转化为了json数据<br>data &#x3D; json.dumps(data)<br>#通过json.loads(data)方法把json数据转化为了python数据<br>data &#x3D; json.loads(data)</p><p>使用的时候先进行导入json包</p><p>set_ global <em>opts方法<br>tine.set</em> globaL_ opts(</p><p>标题</p><p>title_ opts&#x3D;TitLeOpts (“测试”，pos, <em>Left&#x3D;”center”, pos</em> bottom&#x3D;”1%”) ,<br>Legend_ opts&#x3D;LegendOpts (is_ show&#x3D;True) ,<br>tooLbox_ opts&#x3D; TooLbox0pts (is_ show&#x3D;True)，<br>visuaLmap_ opts&#x3D;VisuaLMap0pts (is_ show&#x3D;True) ,<br>tooltip_ opts&#x3D;Tooltip0pts (is_ show&#x3D;True)，<br>)</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;●json格 式的数据要求很严格，下 面我们看一下 他的要求.JSON格式的数据要求很严格，下面我们看一下他的要求&lt;/p&gt;
+&lt;p&gt;{“name”:”admin”,” age”:18}&lt;br&gt;#也可以是:&lt;br&gt;[“name”:” admin”,”age” :18},{“na</summary>
+      
+    
+    
+    
+    <category term="分类" scheme="http://example.com/categories/%E5%88%86%E7%B1%BB/"/>
+    
+    
+    <category term="标签1" scheme="http://example.com/tags/%E6%A0%87%E7%AD%BE1/"/>
+    
+    <category term="标签2" scheme="http://example.com/tags/%E6%A0%87%E7%AD%BE2/"/>
+    
+  </entry>
   
   <entry>
     <title>java</title>
@@ -179,15 +259,16 @@
     <link href="http://example.com/2023/10/28/%E7%AC%94%E8%AE%B0/%E5%BA%8F%E5%88%97/"/>
     <id>http://example.com/2023/10/28/%E7%AC%94%E8%AE%B0/%E5%BA%8F%E5%88%97/</id>
     <published>2023-10-28T09:41:45.640Z</published>
-    <updated>2023-11-02T12:26:03.775Z</updated>
+    <updated>2023-11-21T02:56:39.466Z</updated>
     
-    <content type="html"><![CDATA[<hr><hr>]]></content>
+    <content type="html"><![CDATA[<hr><hr><p>Map</p>]]></content>
     
     
       
       
     <summary type="html">&lt;hr&gt;
 &lt;hr&gt;
+&lt;p&gt;Map&lt;/p&gt;
 </summary>
       
     
@@ -239,48 +320,6 @@
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2023/09/23/hello-world/"/>
-    <id>http://example.com/2023/09/23/hello-world/</id>
-    <published>2023-09-23T08:44:22.786Z</published>
-    <updated>2023-09-22T02:58:47.001Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>one</title>
-    <link href="http://example.com/2023/09/23/one/"/>
-    <id>http://example.com/2023/09/23/one/</id>
-    <published>2023-09-22T16:00:00.000Z</published>
-    <updated>2023-09-23T12:49:41.496Z</updated>
-    
-    <content type="html"><![CDATA[<p>郎·甚矣吾衰矣<br><em>邑中园亭，仆皆为赋此词。一日，独坐停云，水声山色，竞来相娱。意溪山欲援例者，遂作数语，庶几仿佛渊明思亲友之意云。</em><br>甚矣吾衰矣。怅平生、交游零落，只今馀几！白发空垂三千丈，一笑人间万事。问何物、能令公喜？我见青山多妩媚，料青山见我应如是。情与貌，略相似。<br>一尊搔首东窗里。想渊明《停云》诗就，此时风味。江左沉酣求名者，岂识浊醪妙理。回首叫、云飞风起。不恨古人吾不见，恨古人不见吾狂耳。知我者，二三子。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">XSJHAGZXUJZHASGFXZ</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;郎·甚矣吾衰矣&lt;br&gt;&lt;em&gt;邑中园亭，仆皆为赋此词。一日，独坐停云，水声山色，竞来相娱。意溪山欲援例者，遂作数语，庶几仿佛渊明思亲友之意云。&lt;/em&gt;&lt;br&gt;甚矣吾衰矣。怅平生、交游零落，只今馀几！白发空垂三千丈，一笑人间万事。问何物、能令公喜？我见青山多妩媚，料青山见我</summary>
-      
-    
-    
-    
-    
-    <category term="我的诞生" scheme="http://example.com/tags/%E6%88%91%E7%9A%84%E8%AF%9E%E7%94%9F/"/>
     
   </entry>
   
